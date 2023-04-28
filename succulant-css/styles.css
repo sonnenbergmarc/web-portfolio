@@ -1,0 +1,623 @@
+body {
+	background-color: white;
+}
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.back-to-top {
+	display: none;
+	color: #00bdc4;
+	text-align: center;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+}
+
+.back-to-top:hover {
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+.back-to-top a {
+	color: inherit;
+	text-decoration: none;
+}
+/*Header Nav*/
+header{
+	background-color: #533b4d;
+	height: 100px;
+}
+header > nav img{
+	margin: 12px 0px 0px 12px;
+}
+header > nav, header ul{
+	display: flex;
+}
+header > nav p{
+		margin: 30px 500px 0px 17px;
+}
+header > nav li{
+	margin: 20px 40px 0px 0px;
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+}
+header > nav a{
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+}
+header > nav a:hover{
+	cursor: pointer;
+}
+header > nav p{
+	color: #ffffff;
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+}
+/*Header Section*/
+.home .hero-banner{
+	height: 600px;
+	background-image: url(../succulant-img/header-cactus-background.png);
+}
+.home .hero-banner h2{
+	font-family: 'Playfair Display', serif;
+	color: #ffffff;
+	font-size: 60px;
+	margin-left: 45px;
+	line-height: 60px;
+	padding: 90px 0px 25px 0px;
+	width: 390px;
+}
+.home .hero-banner p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	color: #ffffff;
+	margin-left: 45px;
+	width: 390px;
+}
+.home .hero-banner a{
+	padding: 5px 30px;
+	margin-bottom: 65px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #533b4d;
+	color: #ffffff;
+	border-radius: 8px;
+	margin-top: 30px;
+	margin-left: 45px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 36px;
+}
+.home .hero-banner a:hover{
+	text-decoration: underline;
+	text-decoration-color: #9beddd;
+}
+/*Main Secion*/
+main .cactus-care{
+	display: flex;
+	flex-wrap: wrap;
+	/* margin-top: 700px; */
+}
+main .cactus-care{
+	display: flex;
+	flex-wrap: wrap;
+}
+main .cactus-care div{
+	height: 500px;
+	width: 480px;
+}
+main .cactus-care .article{
+	background-color: #9b3f37;
+}
+main .cactus-care .article h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+	color: #ffffff;
+	margin: 44px 0px 20px 32px;
+}
+main .cactus-care .article p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 20px;
+	margin-left: 32px;
+	width: 390px;
+}
+main .cactus-care .article a{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 32px;
+} 
+/*Main About Us Section*/
+main .about-us{
+	align-content: center;
+	display: flex;
+	margin-top: 123px;
+	margin-bottom: 73px;
+	height: 520px;
+}
+main .about-us img{
+	margin-top: 62px;
+	margin-left: 20px;
+}
+main .about-us h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 72px;
+	color: #1d0502;
+	text-align: center;
+}
+main .about-us p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #1d0502;
+	width: 496px;
+	margin-bottom: 15px;
+	margin-left: 30px;	
+}
+main .about-us .disclaimer{
+	font-size: 14px;
+	margin-top: 25px;
+}
+/*Footer Logo Section*/
+footer .footer-logo{
+	width: 960px;
+	text-align: center;
+	margin-top: 67px;
+}
+footer .footer-logo h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	color: #19211f;
+	font-weight: lighter;
+}
+/*Footer Content Section*/
+footer hr{
+	width: 880px;
+	height: 1px;
+	background-color: #1d0501;
+}
+footer .footer-links{
+	display: flex;
+}
+footer .footer-links nav,footer .footer-links div{
+	width: 320px;
+	text-align: center;
+	margin-top: 62px;
+	font-size: 24px;
+	color: #1d0502;
+}
+footer .footer-links nav ul, footer .footer-links div ol{
+	padding-top: 38px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+}
+footer .footer-links div .spacer{
+	margin-top: 34px;
+}
+footer .footer-links nav a:hover{
+	border-bottom: 1px solid #19211f;
+}
+/*Footer Copyright Section*/
+footer .copyright{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 96px;
+	margin-bottom: 96px;
+	color: #1d0502;
+}
+footer .copyright p{
+	margin-bottom: 22px;
+}
+/*Shop Page*/
+
+/*Navigation Bread Crumb*/
+header .breadcrumb{
+	display: flex;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: #533b4d;
+	margin-top: 15px;
+}
+header .breadcrumb li{
+	padding-right: 10px;
+}
+/*Shop - Cactus Main Section*/
+.main-shop{
+	height: 1950px;
+	margin-top: 20px;
+}
+main section .description{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: #000000;
+	padding: 30px 0px 30px 0px;
+}
+.main-shop section > div{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.main-shop .cactus-types div div{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 30px 0px 30px 0px;
+	width: 240px;
+}
+.main-shop section div div h3{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: #000000;
+	width: 240px;
+}
+.main-shop section div div p{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #000000;
+	text-align: center;
+	width: 240px;
+}
+/*shop - Echeveria Main Section*/
+.main-shop .echeveria-types div div{
+	padding-top: 40px;
+}
+/*Cart Page*/
+
+/*Cart - Main Checkout Section*/
+.main-cart{
+	height: 1982px;
+	margin-top: 100px;
+}
+main .checkout-confirmation div{
+	display: flex;
+	flex-wrap: wrap;
+}
+main .checkout-confirmation div div{
+	height: 200px;
+	width: 150px;
+	padding-bottom: 20px;
+}
+main .checkout-confirmation div .checkout-description{
+	height: 200px;
+	width: 360px;
+}
+main .checkout-confirmation div .checkout-description h3{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #18211e;
+	text-align: center;
+}
+main .checkout-confirmation div div .price{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #18211e;
+	text-align: left;
+}
+ main .checkout-confirmation div div .upward-text{
+ 	padding-bottom: 100px;
+}
+main .checkout-confirmation div div p a{
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: #18211e;
+	text-align: center;
+}
+main .checkout-confirmation div .checkout-description h3, main .checkout-confirmation div .checkout-description ul{
+	text-align: left;
+	padding-left: 60px;
+	width: 360px;
+}
+main .checkout-confirmation div .checkout-description ul li{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	color: #18211e;
+	text-align: left;
+}
+main .checkout-confirmation div div img{
+	height: 140px;
+	width: 140px;
+	padding: 20px 0px 0px 25px
+}
+/*Subtotal Price*/
+main .checkout-confirmation p{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #18211e;
+	text-align: center;
+	width: 960px;
+}
+/*Continue Shopping Button*/
+main .checkout-confirmation .continue-shop{
+	padding: 10px 60px;
+	margin-bottom: 100px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #9b3f37;
+	color: #ffffff;
+	border-radius: 8px;
+	margin-top: 60px;
+	margin-left: 318px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	word-spacing: 5px;
+}
+
+/*Checkout Form*/
+/*Heading*/
+main .login-register h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 72px;
+	color: #1d0502;
+	text-align: center;
+	margin-bottom: 40px;
+}
+/*Form*/
+
+main .login-register div .log-in{
+	background-color: #9b3f37;
+	width: 480px;
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Log In*/
+main .login-register div .log-in h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+	color: #ffffff;
+	margin: 50px 0px 20px 50px;
+	width: 430px;
+	height: 20px;
+}
+main .login-register div .log-in p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	width: 369px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	height: 20px;
+}
+main .login-register .log-in div{
+	display: flex;
+	flex-wrap: wrap;
+}
+main .login-register .log-in div .email div label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: bolder;
+	display: block;
+	margin-left: 50px;
+}
+main .login-register .log-in .email input{
+	border: 1px solid black;
+	height: 30px;
+	width: 360px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+main .login-register .log-in .remember label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+}
+main .login-register .log-in .remember input{
+	border: 1px solid black;
+	height: 15px;
+	width: 15px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+main .login-register .log-in a{
+	padding: 5px 15px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #533b4d;
+	color: #ffffff;
+	border-radius: 8px;
+	margin: 50px 0px 0px 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	height: 45px;
+	margin-left: 50px;
+}
+/*Register*/
+main .login-register > div{
+	display: flex;
+}
+main .login-register div .register{
+	border: 1px solid #533b4d;
+	width: 478px;
+	height: 698px;
+	display: flex;
+	flex-wrap: wrap;
+}
+main .login-register div .register h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+	color: #533b4d;
+	margin: 50px 0px 40px 50px;
+	height: 38px;
+}
+main .login-register div .register p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #18211e;
+	height:38px;
+	margin-left: 50px;
+	margin-bottom: 45px;
+}
+
+main .login-register .register div .email div label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #533b4d;
+	font-weight: bolder;
+	display: block;
+	margin-left: 50px;
+}
+main .login-register .register .email input{
+	border: 1px solid black;
+	height: 30px;
+	width: 360px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+main .login-register .register div .name div label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #533b4d;
+	font-weight: bolder;
+	display: block;
+	margin-left: 50px;
+}
+main .login-register .register .name input{
+	border: 1px solid black;
+	height: 30px;
+	width: 100px;
+	margin-bottom: 20px;
+}
+main .login-register .register .remember label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+}
+main .login-register .register.remember input{
+	border: 1px solid black;
+	height: 15px;
+	width: 15px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+main .login-register .register .terms label a{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #9b4037;
+	margin-left: 3px;
+}
+main .login-register .register .terms label{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #533b4d;
+}
+main .login-register .register .terms label a{
+	margin-left: 3px;
+}
+main .login-register .register .terms input{
+	margin-left: 50px;
+	margin-right: 15px;
+	height: 20px;
+	width: 20px;
+}
+main .login-register .register .register-checkout{
+	padding: 5px 10px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #533b4d;
+	color: #ffffff;
+	border-radius: 8px;
+	margin: 20px 0px 60px 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	margin-left: 50px;
+}
+main .login-register .no-interest{
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	color: #1d0502;
+	width: 960px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.register a{
+	height: 45px;
+	margin-left: 4px;
+}
+main .login-register .guest-checkout{
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #9b4037;
+	margin-left: 380px;
+	text-decoration: none;
+}
+.register form{
+	display:flex;
+	flex-wrap: wrap;
+}
+.register form input{
+	width: 150px;
+	margin-left: 50px;
+	height: 30px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+.register form label{
+	display: block;
+	margin-left: 50px;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	color: #533b4d;
+}
+.register form .checkboxDiv input{
+	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+}
+.register form .checkboxDiv label{
+	display: inline-block;
+	margin-left: 2px
+}
+/*Text Decoration and Hover States*/
+header > nav li, header > nav a, header > nav p, main .cactus-care .article a, footer .footer-links nav a, header .breadcrumb a{
+	text-decoration: none;
+}
+header > nav ul a:hover, main .cactus-care .article a:hover, header .breadcrumb a:hover{
+	border-bottom: 1px solid #9beddd;
+}
+main .checkout-confirmation .continue-shop:hover, main .login-register a:hover, main .login-register .register .register-checkout:hover{
+	text-decoration: underline;
+	text-decoration-color: #ffffff;
+}
+main .login-register .guest-checkout:hover {
+	text-decoration: underline;
+}
+.hidden{
+	display: none;
+}
