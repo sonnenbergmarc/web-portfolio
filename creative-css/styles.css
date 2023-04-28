@@ -1,0 +1,1038 @@
+:root {
+    /** colours **/
+    --yellow:           #FED766; 
+    --lt-seafoam-green: #ecf9f6;
+    --seafoam-green:    #43C6AC;
+    --md-blue:          #191654;
+    --dk-blue:          #0C0B2A;
+    --blue-grey:        #6B717E;
+
+    /** typography **/
+    --headings:'Monoton', cursive;
+    --body: 'Rubik', sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    top: 0;
+    left: -9999999px;
+    width: 0.1rem;
+    height: 0.1rem;
+    visibility: hidden;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: var(--dk-blue);
+    font-size: 1.125rem;
+}
+
+header {
+    padding: 1rem 1rem;
+    background-color: var(--lt-seafoam-green);
+    box-shadow: 0 4px 2px -2px #dadcdc;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header a img {
+    width: 11rem;
+}
+
+header .menu-item img {
+    width: 3.125rem;
+    cursor: pointer;
+}
+
+nav {
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--lt-seafoam-green);
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: var(--seafoam-green);
+}
+
+header form {
+    display: flex;
+    border: 2px solid var(--md-blue);
+    margin: 2rem 1rem 3rem 1rem;
+    border-radius: 15px;
+}
+
+header form svg {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.open-menu {
+    max-height: 100vh;
+}
+
+ul.main-menu{
+    padding-inline-start: unset;
+}
+
+.main-menu li{
+    border-bottom: 2px solid var(--seafoam-green);
+    padding: 1rem;
+    color: var(--md-blue)
+}
+
+.main-menu li a{
+    color: var(--md-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+}
+
+header input {
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    border: none;
+    background: transparent url('../creative-img/svg/search-icon.svg') no-repeat;
+    background-position: center left 10px;
+    background-size: 25px;
+}
+
+.back-to-top {
+	display: none;
+	color: #00bdc4;
+	text-align: center;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+}
+
+.back-to-top:hover {
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+.back-to-top a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main section.first-section, body.contact-us main div.top-section {
+    background: rgb(67,198,172);
+    background: linear-gradient(-148deg, rgba(67,198,172,1) 10%, rgba(25,22,84,1) 100%);
+    color: var(--lt-seafoam-green);
+    padding: 3.5rem 1rem;
+}
+
+main section.first-section h2, main section.second-section h2, main div section.third-section h2, main div.four-panel section h2, main div.four-panel section:nth-of-type(2) h3, main div.sixth-section h2, main div.office>div h2, body.contact-us main div.top-section h2, main div.contact-section section.help-today h2, main section.project-start h2 {
+    font-family: 'Monoton', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+main section.first-section h2 {
+    line-height: 1.2;
+}
+
+main section.first-section h2:first-of-type {
+    margin-bottom: 0;
+}
+
+body.contact-us main div.top-section h2 {
+    text-align: center;
+}
+main section.first-section p {
+    margin-bottom: 1.5rem;
+}
+
+main section.first-section button, main button.view-button{
+    border: 3px solid var(--seafoam-green);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.625rem 0rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+main section.first-section div.button button:first-of-type {
+    color: var(--md-blue);
+    background-color: var(--seafoam-green);
+    padding: 0.5rem 3.6rem;
+}
+
+main section.first-section div.button button:first-of-type:hover, main section.first-section div.button button:first-of-type:active, main div.sixth-section button:hover, main div.sixth-section button:active  {
+    border: 3px solid var(--lt-seafoam-green);
+    background-color: var(--lt-seafoam-green);
+    cursor: pointer;
+}
+
+main section.first-section div.button button:last-of-type {
+    color: var(--seafoam-green);
+    background-color: transparent;
+    padding: 0.5rem 5.3rem;
+}
+
+main section.first-section div.button button:last-of-type:hover, main section.first-section div.button button:last-of-type:active {
+    color: var(--lt-seafoam-green);
+    background-color: var(--seafoam-green);
+    cursor: pointer;
+}
+
+main section.second-section h2, main div.split-sides section.third-section h2, main div.four-panel section h2, main div.four-panel section:nth-of-type(2) h3, main div.sixth-section h2, main div.contact-section section.help-today h2, main section.project-start h2 {
+    color: var(--md-blue);
+    text-decoration: 2px underline var(--seafoam-green);
+    text-underline-position: under;
+    font-size: 2.25rem;
+}
+
+main section.second-section p, main div.split-sides section.third-section p {
+    color: var(--dk-blue);
+}
+
+main div.horizontal-scroll div.first-row, main div.horizontal-scroll div.second-row {
+    display: flex;
+}
+
+main div.horizontal-scroll div.first-row div img, main div.horizontal-scroll div.second-row div img{
+    width: 100%;
+    height: 20rem;
+}
+
+main div.horizontal-scroll {
+    overflow: scroll;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+main div.horizontal-scroll div.first-row div, main div.horizontal-scroll div.second-row div {
+    flex: 0 0 18.594rem;
+    height: 24rem;
+}
+
+main div.horizontal-scroll div.first-row div:nth-child(odd), main div.horizontal-scroll div.second-row div:nth-child(even) {
+    background-color: var(--md-blue);
+    color: var(--lt-seafoam-green);
+}
+
+main div.horizontal-scroll div:nth-child(even), main div.horizontal-scroll div.second-row div:nth-child(odd) {
+    background-color: var(--seafoam-green);
+    color: var(--dk-blue);
+}
+
+main div.horizontal-scroll div h2{
+    font-size: 0.875rem;
+    margin: 0.5rem 0 0 1rem;
+    text-transform: uppercase;
+}
+
+main div.horizontal-scroll div p {
+    margin-left: 1rem;
+}
+
+main button.view-button {
+    padding: 0.5rem 1.1rem;
+    margin: 2rem 1rem 0rem 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--md-blue);
+    border-color: var(--md-blue);
+    background-color: transparent;
+    font-weight: 400;
+}
+
+main .flex-end {
+    display: flex;
+}
+
+main button.view-button svg, .contact-us form div.message-us svg {
+    width: 3rem;
+    display: inline;
+    padding-left: 1rem;
+    fill: var(--md-blue);
+    display: inline;
+}
+
+main button.view-button:hover, main button.view-button:active,.contact-us form div.message-us button:hover, .contact-us form div.message-us button:hover {
+    color: var(--lt-seafoam-green);
+    background-color: var(--md-blue);
+    cursor: pointer;
+}
+
+main button.view-button svg:hover, main button.view-button svg:active, .contact-us form div.message-us button svg:hover, .contact-us form div.message-us button svg:active  {
+    fill: var(--lt-seafoam-green);
+    display: inline;
+    cursor: pointer;
+}
+
+main button.view-button.second {
+    margin-left: 0;
+    padding: 0.5rem 1.9rem;
+    margin-right: 0;
+}
+
+main div.split-sides {
+    margin: 3rem 1rem;
+}
+
+main div.split-sides div img {
+    height: 13.75rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+main div.split-sides div h2, main div.office>div h2 {
+    font-size: 1.875rem;
+    color: var(--seafoam-green);
+    margin-top: 1rem;
+    width: 90%;
+}
+
+main div.split-sides div p {
+    margin-top: 0.5rem;
+}
+
+main div.four-panel section:nth-of-type(1) {
+    padding: 3rem 1rem;
+    background-color: var(--seafoam-green);
+}
+
+main div.four-panel section h2 {
+    text-decoration: 2px underline var(--lt-seafoam-green);
+}
+
+main div.four-panel section p {
+    padding-bottom: 1rem;
+}
+
+main div.four-panel section button.view-button {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+main div.four-panel section:nth-of-type(2) {
+    background-color: var(--md-blue);
+    padding: 3.5rem 1rem;
+}
+
+main div.four-panel section:nth-of-type(2) h3, main div.contact-section section.help-today h2  {
+    color: var(--lt-seafoam-green);
+    width: 80%;
+    text-decoration: none;
+    border-bottom: 2px solid var(--seafoam-green)
+}
+
+main div.contact-section section.help-today h2 {
+    color: var(--md-blue);
+    width: 90%;
+}
+
+main div.four-panel section:nth-of-type(2) p {
+    color: var(--lt-seafoam-green);
+}
+
+main div.four-panel section:nth-of-type(2) .view-button.fourth {
+    color: var(--lt-seafoam-green);
+    border: 3px solid var(--lt-seafoam-green);
+    margin-bottom: 0;
+    padding: 0.5rem 2.6rem;
+    font-weight: 400;
+}
+
+main div.four-panel section:nth-of-type(2) .view-button.fourth svg {
+    fill: var(--lt-seafoam-green);
+}
+
+main div.four-panel section:nth-of-type(2) .view-button.fourth:hover, main div.four-panel section:nth-of-type(2) .view-button.fourth:active {
+    color: var(--md-blue);
+    border: 3px solid var(--lt-seafoam-green);
+    background-color: var(--lt-seafoam-green);
+    cursor: pointer;
+}
+
+main div.four-panel section:nth-of-type(2) .view-button.fourth svg:hover, main div.four-panel section:nth-of-type(2) .view-button.fourth svg:active {
+    fill: var(--md-blue);
+}
+
+main div.four-panel div:nth-of-type(2) {
+    margin: 3.5rem 1rem 2rem 0.5rem;
+}
+
+main div.four-panel div:nth-of-type(2) img {
+    min-width: 100%;
+    height: 15rem;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+}
+
+main div.four-panel div:nth-of-type(2) h3 {
+    font-size: 1.875rem;
+    color: var(--seafoam-green);
+    margin-bottom: 1rem;
+}
+
+main div.contact-section section.email-us p {
+    color: var(--seafoam-green);
+    font-weight: 700;
+}
+
+main div.contact-section section.email-us h2, main div.contact-section div.contact-info h2  {
+    font-size: 1.875rem;
+    color: var(--dk-blue);
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+main div.four-panel div:nth-of-type(2) p:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+main div.four-panel div:nth-of-type(2) a {
+    color: var(--md-blue);
+    text-decoration: 1px underline var(--seafoam-green);
+    text-underline-position: under;
+    font-size: 1.125rem;
+}
+
+main div.four-panel div:nth-of-type(2) a:hover, main div.four-panel div:nth-of-type(2) a:active {
+    color: var(--seafoam-green);
+    text-decoration: none;
+}
+
+main div.sixth-section {
+    background: url('../creative-img/contact-banner-bkgd.webp') center / cover no-repeat;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40rem;
+    padding: 3.5rem 1rem;
+}
+
+main div.sixth-section h2, main div.sixth-section p, main div.office>div h2, main div.office>div address, main div.office>div a, main div.office>div p {
+    color: var(--lt-seafoam-green);
+    text-decoration: none;
+}
+
+main div.sixth-section p {
+    padding-top: 1rem;
+}
+
+main div.sixth-section button {
+    border: 3px solid var(--seafoam-green);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--md-blue);
+    background-color: var(--seafoam-green);
+    padding: 0.5rem 3.8rem;
+    margin-top: 3rem;
+    font-weight: 400;
+}
+
+main div.office {
+    background-color: var(--md-blue);
+    padding: 3.5rem 1rem;
+}
+
+main div.office div address, main div.office div p, main div.contact-section div.contact-info p, main div.contact-section div.contact-info address {
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+main div.office>div p:nth-of-type(4), main div.contact-section section.contact-info p:nth-of-type(3) {
+    margin-bottom: 3rem;
+}
+
+main div.office div p:nth-of-type(1), main div.office div p:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+main div.office>div a:hover, main div.office>div a:active, footer a:hover, footer a:active {
+    color: var(--seafoam-green);
+    cursor: pointer;
+}
+
+main div div.quick-links {
+    display: flex;
+}
+
+main div div.quick-links ul {
+    padding-inline-start: 0;
+}
+
+main div div.quick-links ul li {
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+main div div.quick-links ul.first-links {
+    width: 45%;
+    margin-right: 3.6rem;
+}
+
+main did div.quick-links ul.first-links {
+    width: 45%;
+}
+
+main div div.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div div.newsletter div input {
+    padding: 0.5rem 4.2rem 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--md-blue);
+    font-weight: 400;
+    border: none;
+}
+
+main div div.newsletter div.submit input {
+    padding: 0.5rem 4.4rem;
+    background-color: var(--seafoam-green);
+}
+
+footer {
+    background-color: var(--dk-blue);
+    padding: 0.5rem 1rem;
+}
+
+footer .social-media {
+    display: flex;
+    color: var(--lt-seafoam-green);
+}
+
+footer .social-media svg {
+    width: 2.375rem;
+    height: 2.375rem;
+}
+
+footer p {
+    color: var(--lt-seafoam-green);
+}
+
+footer div p > a {
+    color: var(--lt-seafoam-green);
+    text-decoration: none;
+}
+
+/* Contact-Us Page */
+
+main section.second-section, main div.contact-section section.help-today {
+    padding: 3.5rem 1rem;
+}
+
+main div.contact-section section.email-us {
+    padding: 0 0 2.5rem 1rem;
+}
+
+main div.contact-section div.contact-info {
+    padding: 0 0 3.5rem 1rem;
+}
+
+main div.contact-section div.contact-info p:nth-of-type(1), main div.contact-section div.contact-info p:nth-of-type(4) {
+    font-weight: 700;
+}
+
+main section.project-start {
+    background-image: url('../creative-img/do-something-great-parallax.webp');
+    filter: hue-rotate(25deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: calc(100 vh - 100px);
+    padding: 3.5rem 1rem;
+}
+
+main section.project-start h2 {
+    text-decoration: none;
+    border-bottom: 2px solid var(--seafoam-green);
+    color: var(--lt-seafoam-green);
+    width: 90%;
+    text-shadow: 2px 2px var(--blue-grey);
+}
+
+main section.project-start p {
+    color: var(--lt-seafoam-green);
+    filter: drop-shadow(0.5rem 0.5rem 1rem black);
+}
+
+.contact-us .project {
+    padding: 3.5rem 1rem;
+}
+
+.contact-us form .cust-info label{
+    display: block;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.contact-us form .cust-info input {
+    border: 3px solid var(--seafoam-green);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    width: 95%;
+}
+
+.contact-us form .checkbox h2, .contact-us form .budget-select label, .contact-us form .message-us label {
+    margin: 1rem 1rem 2rem 0;
+    font-weight: 300;
+    font-size: 1.875rem;
+    text-transform: unset;
+}
+
+.contact-us form .checkbox label {
+    display: inline;
+}
+
+.contact-us form .budget-select select {
+    border: 3px solid var(--seafoam-green);
+    border-radius: 5px;
+    display: block;
+    margin-top: 0.2rem;
+    width: 80%;
+    padding: 1rem 1rem;
+}
+
+.contact-us form .budget-select option {
+    border: 3px solid var(--seafoam-green);
+}
+
+.contact-us form .budget-select select:invalid{
+    border: 3px solid #c6435d;
+}
+
+.contact-us form .message-us {
+    padding-top: 2rem;
+}
+
+.contact-us form .message-us p  {
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1.125rem;
+}
+
+.contact-us form .message-us textarea {
+    width: 99%;
+    font-size: 0.75rem;
+    border: 3px solid var(--seafoam-green);
+    border-radius: 5px;
+    max-width: 99%;
+    max-height: 10rem;
+    min-width: 90%;
+    min-height: 5rem;
+}
+
+.contact-us form .message-us button {
+    background-color: transparent;
+    border: 3px solid var(--md-blue);
+    color: var(--md-blue);
+    font-weight: 400;
+    padding: 0.5rem 0.7rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.contact-us form input:invalid {
+    border: 3px solid #c6435d;
+}
+
+.contact-us form .message-us textarea:invalid {
+    border: 3px solid #c6435d;
+}
+
+@media screen and (min-width: 760px) {
+
+    main section.first-section {
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.first-section h2 {
+        font-size: 4rem;
+    }
+
+    main section.first-section .button {
+        display:flex;
+        flex-direction: row;
+    }
+
+    main section.first-section div.button button:first-of-type {
+        padding: 1rem 3rem;
+        margin-right: 3rem;
+    }
+
+    main section.first-section div.button button:last-of-type {
+        padding: 1rem 3rem;
+    }
+
+    main section.first-section div {
+        display: flex;
+        flex-flow: column;
+    }
+
+    main .flex-end {
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+
+    .split-sides .twobytwo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .split-sides .twobytwo div {
+        width: 50%;
+        padding-left: 0.5rem;
+    }
+
+    main div.four-panel section:nth-of-type(1), main div.four-panel section:nth-of-type(2) {
+        padding: 10rem 1rem;
+    }
+
+    main div.four-panel section:nth-of-type(2) div {
+        width: 90%;
+    }
+
+    main div.four-panel section:nth-of-type(2) div p {
+        width: 70%;
+    }
+
+    main div.four-panel div.learn {
+        display: flex;
+        align-items: center;
+    }
+
+    main div.four-panel div.learn div img {
+        margin: 0;
+        width: 100%;
+        height: 18rem;
+    }
+
+    main div.four-panel div.learn div:first-of-type {
+        flex: 1 0 auto;
+        margin: 0;
+        margin-right: 2rem;
+    }
+
+    main div.four-panel div.learn div:last-of-type {
+        flex: 2 0 18rem;
+        margin: 0;
+        text-align: start;
+    }
+
+    main div.office {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section.project-start div {
+        width: 65%;
+    }
+
+    main div.newsletter form {
+        display: flex;
+    }
+
+    main div.newsletter form input[type="email"] {
+        border-radius: 5px 0 0 5px;
+        min-width: 28rem;
+    }
+
+    main div div.newsletter div.submit input {
+        border-radius: 0 5px 5px 0;
+        padding: 0.5rem 2rem;
+    }
+
+    div.footer-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    div.footer-section .social-media {
+        order: 1;
+    }
+
+    main .contact-section .office-locations {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10rem;
+    }
+
+    main form .cust-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .contact-us form .cust-info div {
+        width: 46%
+    }
+
+    main form div.checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    main form div.checkbox h2 {
+        width: 100%;
+    }
+
+    main form div.checkbox div.first-checkbox, main form div.checkbox div.second-checkbox, main form div.checkbox div.third-checkbox, main form div.checkbox div.fourth-checkbox {
+        min-width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-us form .budget-select select {
+        max-width: 75%;
+    }
+
+    .contact-us form .message-us textarea {
+        width: 75%;
+        max-width: 75%;
+        max-height: 20rem;
+        min-width: 70%;
+        min-height: 8rem;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+
+    .menu-item {
+        display: none;
+    }
+
+    nav {
+        overflow:visible;
+        max-height: 100vh;
+        position: static;
+        width: unset;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-menu ul {
+        padding: 1rem;
+    }
+
+    .main-menu li {
+        border-bottom: none;
+        width: 8.4rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-menu li a {
+        font-size: 1.125rem;
+    }
+
+    header form {
+        width: 20%;
+        display: inline-block;
+        margin: 0;
+    }
+
+    main section.first-section p {
+        width: 60%;
+    }
+
+    main div.horizontal-scroll {
+        overflow: unset;
+        align-items: center;
+    }
+
+    main div.split-sides {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 3rem 0;
+    }
+
+    main div.split-sides section.third-section {
+        width: 45%;
+    }
+
+    main div.split-sides .twobytwo {
+        width: 45%;
+    }
+
+    main div.split-sides .twobytwo div {
+        width: 45%;
+    }
+
+    main div.four-panel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main div.four-panel > div {
+        width: 50%;
+    }
+
+    main div.four-panel > div img {
+        height: 45rem;
+    }
+
+    main div.four-panel section {
+        width: 50%;
+        height: 45rem;
+    }
+
+    main div.four-panel div:nth-of-type(2)  {
+        margin: 0;
+    }
+
+    main div.four-panel div.learn {
+        flex-direction: column;
+    }
+
+    main div.four-panel div.learn div:first-of-type {
+        flex: unset;
+        margin-top: 4rem;
+    }
+
+    main div.four-panel div.learn div img {
+        width: 20rem;
+        height: 10rem;
+    }
+
+    main div.four-panel div.learn div:last-of-type {
+        margin: 2rem 1rem;
+        width: 80%;
+    }
+
+    main div.office>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+
+    main div.office>div div:nth-of-type(2) {
+        margin-right: 2rem;
+    }
+
+    main div.office>div div.quick-links {
+        width: 100%;
+    }
+
+    main div.office>div div.quick-links ul.first-links {
+        margin: 0;
+        margin-right: 2rem;
+    }
+
+    main div.office>div div.quick-links ul.second-links {
+        margin: 0;
+        width: 100%;
+    }
+
+    main div.office>div div {
+        width: 28%;
+    }
+
+    main div.office>div div.newsletter {
+        width: 40%;
+    }
+
+    main div.office>div div.newsletter div {
+        display: unset;
+        margin: 0;
+    }
+
+    main div.office>div div.newsletter form div:first-of-type {
+        margin-right: 7rem;
+    }
+
+    main div.office>div div.newsletter form input[type="email"] {
+        min-width: 10rem;
+    }
+
+    main div.contact-section {
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+
+    main div.contact-section .help-today {
+        width: 30%;
+        margin: 5rem 0;
+    }
+    
+    main div.contact-section .email-contact {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    main div.contact-section .contact-info div {
+        margin-right: 4rem;
+        padding: 0;
+    }
+
+    main form div.checkbox div.first-checkbox, main form div.checkbox div.second-checkbox, main form div.checkbox div.third-checkbox, main form div.checkbox div.fourth-checkbox {
+        min-width: 25%;
+        margin-bottom: 1rem;
+    }
+
+    main div.horizontal-scroll, main header div.inner-container {
+        max-width: 74.375rem;
+    }
+
+    .flex-container, main section.first-section>div, .second-section, .horizontal-scroll, .flex-end, main div.split-sides, .four-panel, .sixth-section, main div.office, footer .footer-section{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
